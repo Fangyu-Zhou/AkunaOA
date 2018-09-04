@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p id="demo"></p>
+
+<script>
+    // let a = "10";
+    // let answer = calculateArea("square", [2]);
+    // document.getElementById("demo").innerHTML = a;
+    let cars = calculateArea("square", [2]);
+    document.getElementById("demo").innerHTML = cars;
+</script>
+
+<script>
+    let calculateArea = (shape, values) => {
+        return new Promise(function (resolve, reject) {
+            if (shape == "square" || shape == "rectangle") {
+                if (shape == "square") {
+                    resolve(values[0] * value[0]);
+                }
+                else if (shape == "rectangle") {
+                    resolve(value[0] * value[1]);
+                }
+            } else {
+                reject(-1);
+            }
+        });
+    }
+
+    let getAreas = (shapes, values_arr) => {
+        return new Promise(function (resolve, reject) {
+
+        });
+    }
+
+</script>
+</body>
+</html>
